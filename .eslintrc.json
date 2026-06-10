@@ -1,0 +1,8 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    // Indica ao ESLint qual arquivo tsconfig.json deve ser utilizado para a análise do TypeScript.
+    "project": "./tsconfig.json"
+  },
+  "extends": ["standard-with-typescript"]
+}
