@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
+    "rootDir": "./src",
     "outDir": "./dist",
     "module": "commonjs",
-    "target": "es2023",
+    "target": "es2022",
     "esModuleInterop": true,
     "strict": true, // ---enables a suite of built-in type-checking behaviors
     "forceConsistentCasingInFileNames": true, // ---enforces uniform capitalization for file imports
     "skipLibCheck": true, // ---skip type checking of declaration files (node_modules)
     "allowJs": true // ---allows .ts and .tsx files to coexist with existing JavaScript.
-  }
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
 }
