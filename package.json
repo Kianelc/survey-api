@@ -8,7 +8,7 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "test": "jest --passWithNoTests --watch",
-    "test:staged": "jest",
+    "test:staged": "jest --passWithNoTests",
     "prepare": "husky"
   },
   "engines": {
