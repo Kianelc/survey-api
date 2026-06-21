@@ -8,7 +8,8 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "test": "jest --passWithNoTests --watch",
-    "test:staged": "jest --passWithNoTests"
+    "test:staged": "jest",
+    "prepare": "husky"
   },
   "engines": {
     "node": "22.22.3"
@@ -18,6 +19,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.x",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
