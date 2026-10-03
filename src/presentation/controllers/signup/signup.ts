@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/space-before-function-paren */
 import type {
   HttpeResponde,
   HttpRequest,
@@ -12,12 +13,12 @@ export class SignUpController implements Controller {
   private readonly emailValidator: EmailValidator
   private readonly addAccount: AddAccount
 
-  constructor (emailValidator: EmailValidator, addAccount: AddAccount) {
+  constructor(emailValidator: EmailValidator, addAccount: AddAccount) {
     this.emailValidator = emailValidator
     this.addAccount = addAccount
   }
 
-  handle (httpRequest: HttpRequest): HttpeResponde {
+  async handle(httpRequest: HttpRequest): Promise<HttpeResponde> {
     try {
       const requiredField = [
         'name',
@@ -41,7 +42,7 @@ export class SignUpController implements Controller {
         return badRequest(new InvalidParamError('email'))
       }
 
-      const account = this.addAccount.add({
+      const account = await this.addAccount.add({
         name,
         email,
         password
