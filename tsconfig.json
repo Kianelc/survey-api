@@ -9,9 +9,7 @@
     "forceConsistentCasingInFileNames": true, // ---enforces uniform capitalization for file imports
     "skipLibCheck": true, // ---skip type checking of declaration files (node_modules)
     "allowJs": true, // ---allows .ts and .tsx files to coexist with existing JavaScript.
-     "types": ["node", "jest"]
+    "types": ["node", "jest"]
   },
-  "include": [
-    "src/**/*.ts"
-  ]
+  "include": ["src/**/*.ts"]
 }

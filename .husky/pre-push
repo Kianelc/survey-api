@@ -1,0 +1,2 @@
+echo "🪝 Husky pre-push hook triggered..."
+npm run test:ci
