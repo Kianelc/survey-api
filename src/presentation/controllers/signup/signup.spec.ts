@@ -15,7 +15,6 @@ interface SutTypes {
 
 const makeEmailValidator = (): EmailValidator => {
   class EmailValidatorStub implements EmailValidator {
-    // eslint-disable-next-line @typescript-eslint/space-before-function-paren
     isValid(email: string): boolean {
       return true
     }
@@ -25,7 +24,6 @@ const makeEmailValidator = (): EmailValidator => {
 
 const makeAddAccount = (): AddAccount => {
   class AddAccountStub implements AddAccount {
-    // eslint-disable-next-line @typescript-eslint/space-before-function-paren
     async add(account: AddAccountModel): Promise<AccountModel> {
       const fakeAccount = {
         id: 'valid_id',
